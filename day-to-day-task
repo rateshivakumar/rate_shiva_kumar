@@ -1,0 +1,620 @@
+✅ Phase-1 (First 6 Months) – 9 Solid DevOps Projects
+
+This document contains:
+
+Clear explanation of all 9 solid projects
+
+What to build, what to break, what to fix
+
+Skills gained from each project
+
+A printable checklist you can tick weekly/monthly
+
+You can print this or keep it as a progress tracker.
+
+📅 HOW TO USE THIS DOCUMENT DAY‑WISE (VERY IMPORTANT)
+
+⚠️ Important clarification: This canvas currently shows PROJECTS, not daily tasks.
+
+Your DAY‑WISE tasks come from the 6‑MONTH PLAN we discussed in chat (Linux → AWS → Docker → K8s → Terraform).
+
+To make this document usable day by day, use the system below.
+
+🧭 STEP 1: IDENTIFY TODAY (DO THIS DAILY)
+
+Every day, ask yourself 3 things:
+
+Month (1 to 6)
+
+Week (1 to 4)
+
+Day (1 to 5 – weekdays)
+
+📌 Example:
+
+Month 1 → Week 1 → Day 3
+
+🗂️ STEP 2: MAP DAY → WHAT YOU SHOULD DO
+
+Use this fixed mapping:
+
+🔹 MONTH 1 – LINUX + NOC
+
+Week 1 – Linux Basics
+
+Day 1: Linux install + basic commands
+
+Day 2: Users, groups, permissions
+
+Day 3: Package management (apt/yum), install nginx
+
+Day 4: Processes, services (ps, top, systemctl)
+
+Day 5: Logs (/var/log, journalctl)
+
+Week 2 – Linux Admin & Scripting
+
+Day 1: Shell variables
+
+Day 2: Conditions & loops
+
+Day 3: Write small scripts
+
+Day 4: Cron jobs & automation
+
+Day 5: Linux troubleshooting
+
+Week 3 – Git & GitHub
+
+Day 1: git clone, add, commit
+
+Day 2: branching & merge
+
+Day 3: conflicts
+
+Day 4: GitHub workflow
+
+Day 5: Repo cleanup
+
+Week 4 – NOC → DevOps Mapping
+
+Day 1–5: Monitoring, alerts, incidents, SLAs + notes
+
+🔹 MONTH 2–3 – AWS CORE
+
+IAM, EC2, VPC, S3, ALB, Auto Scaling, CloudWatch
+
+👉 Each day = one AWS concept + hands‑on + screenshots
+
+🔹 MONTH 4 – DOCKER + CI/CD
+
+Docker basics → Dockerfile → Docker Compose
+
+Jenkins → Pipeline → Jenkinsfile
+
+🔹 MONTH 5 – KUBERNETES
+
+Pods → Deployments → Services
+
+ConfigMaps → Secrets → Ingress → HPA
+
+🔹 MONTH 6 – TERRAFORM + MONITORING
+
+Terraform basics
+
+Monitoring (CloudWatch / Prometheus / Grafana)
+
+⏱️ STEP 3: DAILY 2.5‑HOUR RULE (NON‑NEGOTIABLE)
+
+For any day, follow this exact format:
+
+30 min → Watch only today’s topic video
+
+90 min → Hands‑on practice
+
+30 min → Break/fix + GitHub commit
+
+If GitHub has a commit → ✅ Day completed
+
+✅ STEP 4: USE PROJECTS AS WEEKEND / END‑OF‑MONTH WORK
+
+This canvas document (Projects 1–9) is used when:
+
+Weekend
+
+End of a month
+
+Revision
+
+Daily learning feeds into these projects.
+
+🧠 SIMPLE RULE TO REMEMBER
+
+Day‑wise → Follow MONTH / WEEK / DAY mapping above
+
+Proof → GitHub commit
+
+Projects → Apply what you learned
+
+🔥 PROJECT 1: Broken Linux Server Lab
+
+Category: Linux + Troubleshooting
+
+What you do
+
+Create an Ubuntu VM
+
+Intentionally break the system
+
+Diagnose and fix issues
+
+Failure Scenarios
+
+Disk full
+
+Service down (nginx)
+
+Permission denied
+
+High CPU usage
+
+Port already in use
+
+Commands you must use
+
+df -h, du -sh
+
+systemctl status/start
+
+journalctl -xe
+
+chmod, chown
+
+ps aux, top, netstat/ss
+
+Skills gained
+
+Linux admin
+
+Root cause analysis
+
+NOC-style troubleshooting
+
+🔥 PROJECT 2: Log Analysis & Incident Investigation
+
+Category: Linux + NOC
+
+What you do
+
+Analyze system and application logs
+
+Find errors and root cause
+
+Tools & Commands
+
+grep, awk, sed
+
+journalctl
+
+/var/log files
+
+Output
+
+Incident report (what happened, why, how fixed)
+
+Skills gained
+
+Log analysis
+
+Incident handling
+
+🔥 PROJECT 3: AWS Network Troubleshooting Lab
+
+Category: AWS + Networking
+
+What you build
+
+VPC with public & private subnets
+
+What you break & fix
+
+EC2 not reachable
+
+Internet not working in private subnet
+
+Security Group vs NACL issues
+
+Skills gained
+
+VPC design
+
+AWS networking troubleshooting
+
+🔥 PROJECT 4: AWS Production Architecture (CORE PROJECT)
+
+Category: AWS + DevOps
+
+Architecture
+
+Custom VPC
+
+Public + Private subnets
+
+ALB in public subnet
+
+EC2 in private subnet
+
+Auto Scaling Group
+
+Bastion host
+
+CloudWatch alarms
+
+Skills gained
+
+Production AWS design
+
+High availability
+
+Monitoring
+
+🔥 PROJECT 5: Containerized Application with Docker
+
+Category: Docker
+
+What you do
+
+Containerize a simple app (Python/Java)
+
+Write Dockerfile
+
+Use volumes and networks
+
+Failure practice
+
+App crash
+
+Port mismatch
+
+Image build errors
+
+Skills gained
+
+Docker internals
+
+Container debugging
+
+🔥 PROJECT 6: Broken CI/CD Pipeline Lab
+
+Category: Jenkins + CI/CD
+
+What you build
+
+GitHub → Jenkins → Docker → EC2 pipeline
+
+What you break
+
+Jenkins permission issue
+
+Docker build failure
+
+Webhook not triggering
+
+Skills gained
+
+CI/CD troubleshooting
+
+Pipeline debugging
+
+🔥 PROJECT 7: Kubernetes Troubleshooting Playground
+
+Category: Kubernetes
+
+What you deploy
+
+App on Minikube
+
+Failure scenarios
+
+Pod crash loop
+
+ImagePullBackOff
+
+Service not reachable
+
+Ingress not working
+
+Commands
+
+kubectl get/describe/logs/exec
+
+Skills gained
+
+Kubernetes operations
+
+Pod & service debugging
+
+🔥 PROJECT 8: Terraform AWS Infrastructure Project
+
+Category: Infrastructure as Code
+
+What you build
+
+VPC
+
+EC2
+
+Security Groups
+
+ALB (basic)
+
+Failure practice
+
+Manual resource deletion
+
+State mismatch
+
+Skills gained
+
+IaC mindset
+
+Terraform state handling
+
+🔥 PROJECT 9: Monitoring & Alerting Lab
+
+Category: Monitoring + Operations
+
+What you do
+
+CloudWatch metrics & alarms
+
+Prometheus + Grafana basics
+
+Failure simulation
+
+High CPU
+
+Service down
+
+Alert triggered
+
+Skills gained
+
+Monitoring
+
+Alerting
+
+Production readiness
+
+🖨️ PRINTABLE CHECKLIST (TICK AS YOU GO)
+
+Month 1 – Linux
+
+
+
+Month 2 – AWS Core
+
+
+
+Month 3 – AWS Production
+
+
+
+Month 4 – Docker & CI/CD
+
+
+
+Month 5 – Kubernetes
+
+
+
+Month 6 – Terraform & Monitoring
+
+
+
+🎯 FINAL RESULT AFTER 6 MONTHS
+
+9 real-world DevOps projects
+
+Strong troubleshooting mindset
+
+Production + NOC experience
+
+Ready for AWS & Kubernetes certifications
+
+🧩 GITHUB REPOSITORY STRUCTURE (FOR ALL 9 PROJECTS)
+
+Below is the recommended GitHub structure that makes you look like a real DevOps engineer with 2–3 years experience.
+
+You should create ONE main repository and organize everything inside it.
+
+📂 MAIN REPOSITORY
+
+Repo name: devops-aws-hands-on-projects
+
+devops-aws-hands-on-projects/
+│
+├── 01-linux-broken-server-lab/
+│   ├── scripts/
+│   ├── issues-screenshots/
+│   ├── README.md
+│
+├── 02-log-analysis-incident-lab/
+│   ├── sample-logs/
+│   ├── analysis-notes/
+│   ├── README.md
+│
+├── 03-aws-network-troubleshooting/
+│   ├── architecture/
+│   ├── screenshots/
+│   ├── README.md
+│
+├── 04-aws-production-architecture/
+│   ├── architecture-diagram/
+│   ├── screenshots/
+│   ├── cloudwatch/
+│   ├── README.md
+│
+├── 05-dockerized-application/
+│   ├── app/
+│   ├── Dockerfile
+│   ├── docker-compose.yml
+│   ├── README.md
+│
+├── 06-ci-cd-broken-pipeline-lab/
+│   ├── Jenkinsfile
+│   ├── pipeline-screenshots/
+│   ├── README.md
+│
+├── 07-kubernetes-troubleshooting/
+│   ├── manifests/
+│   ├── screenshots/
+│   ├── README.md
+│
+├── 08-terraform-aws-infra/
+│   ├── modules/
+│   ├── env-dev/
+│   ├── main.tf
+│   ├── variables.tf
+│   ├── README.md
+│
+├── 09-monitoring-alerting-lab/
+│   ├── prometheus/
+│   ├── grafana/
+│   ├── screenshots/
+│   ├── README.md
+│
+├── assets/
+│   └── common-diagrams/
+│
+└── README.md
+
+📝 HOW TO WRITE EACH PROJECT README (VERY IMPORTANT)
+
+Every project README should have this format:
+
+1️⃣ Project Overview
+
+What the project is
+
+Why it is needed in real production
+
+2️⃣ Architecture / Flow
+
+Diagram (draw.io / screenshots)
+
+3️⃣ Tools Used
+
+Linux / AWS / Docker / Kubernetes / Terraform etc.
+
+4️⃣ What I Implemented
+
+Step-by-step (high level)
+
+5️⃣ Failure Scenarios Tested
+
+What broke
+
+How you detected it
+
+How you fixed it
+
+6️⃣ Key Learnings
+
+Real DevOps takeaways
+
+🎯 WHY THIS STRUCTURE WORKS (INTERVIEW SECRET)
+
+When an interviewer opens your GitHub:
+
+They see clear organization
+
+They see troubleshooting focus
+
+They see production thinking
+
+This screams:
+
+“This person has worked on real systems.”
+
+🚨 IMPORTANT RULES
+
+❌ Do NOT dump random files
+
+❌ Do NOT skip README
+
+✅ Every project must show problem → fix
+
+✅ Commit regularly with meaningful messages
+
+🏁 FINAL ADVICE
+
+If you complete these 9 projects and structure GitHub like this:
+
+You don’t need to say “3 years experience” loudly
+
+Your GitHub will say it for you
+
+Next Recommended Step:
+
+Resume bullet points mapped from these 9 projects
+
+Interview questions from each project
+
+Just say 👉 NEXT: RESUME + INTERVIEW MAPPING
+
+📄 COPY-PASTE README TEMPLATE (USE FOR ALL PROJECTS)
+
+# Project Title
+
+## 📌 Overview
+Short description of the problem this project solves in real production.
+
+## 🏗️ Architecture / Flow
+- Add diagram or screenshots
+- Explain request flow
+
+## 🛠️ Tools & Technologies
+- Linux
+- AWS (EC2, VPC, ALB, etc.)
+- Docker / Kubernetes / Terraform (as applicable)
+
+## ⚙️ What I Implemented
+- Step 1: ...
+- Step 2: ...
+- Step 3: ...
+
+## 🚨 Failure Scenarios Tested
+- Issue 1: What broke
+- Diagnosis: How I identified it
+- Fix: What I did to resolve it
+
+## ✅ Result
+- What worked after the fix
+
+## 📚 Key Learnings
+- Bullet points of real DevOps lessons
+
+🧾 RESUME BULLET POINTS (MAP FROM PROJECTS)
+
+Example – AWS Production Architecture Project
+
+Designed and implemented a highly available AWS architecture using VPC, public/private subnets, ALB, Auto Scaling Groups, and CloudWatch monitoring
+
+Troubleshot EC2 connectivity and load balancer health check issues by analyzing security groups, route tables, and target group configurations
+
+Implemented CloudWatch alarms to proactively monitor system health and trigger alerts
+
+Example – CI/CD Pipeline Project
+
+Built an end-to-end CI/CD pipeline using GitHub, Jenkins, Docker, and AWS EC2
+
+Debugged Jenkins pipeline failures related to permissions, Docker image builds, and webhook triggers
+
+Automated application build and deployment process, reducing manual deployment effort
+
+Example – Kubernetes Project
+
+Deployed containerized applications on Kubernetes using Deployments, Services, Ingress, and HPA
+
+Investigated and resolved pod failures such as CrashLoopBackOff and ImagePullBackOff using kubectl logs and descr
