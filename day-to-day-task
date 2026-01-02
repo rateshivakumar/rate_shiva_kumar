@@ -618,3 +618,385 @@ Example – Kubernetes Project
 Deployed containerized applications on Kubernetes using Deployments, Services, Ingress, and HPA
 
 Investigated and resolved pod failures such as CrashLoopBackOff and ImagePullBackOff using kubectl logs and descr
+
+
+
+
+     ############################################################################################################################   
+
+
+
+
+
+        You want ONE clear system where for EACH DAY you can see:
+
+✅ What is today’s task
+
+📚 Where to learn (exact YouTube / resource)
+
+🛠️ What to do hands-on
+
+🧠 What you must understand (concepts)
+
+🚨 How to troubleshoot / break & fix
+
+📂 What to push to GitHub
+
+I’ll arrange this in a clean, repeatable format so you never get confused again.
+
+🧭 DAILY STUDY SYSTEM (USE THIS EVERY DAY)
+
+⏱️ Total time: 2.5 hours
+
+Time	What
+30 min	Learn (video / reading)
+90 min	Hands-on practice
+30 min	Break → Fix → GitHub
+
+👉 Rule: If GitHub has a commit → ✅ Day completed
+
+🔹 PHASE-1: MONTH 1 – LINUX + NOC FOUNDATION
+🎯 Month Goal
+
+Linux confidence
+
+Think like NOC + DevOps
+
+Daily GitHub habit
+
+✅ WEEK 1: Linux Basics
+📅 DAY 1 – Linux Setup + Basic Commands
+🎯 Today’s Goal
+
+Understand Linux filesystem + basic navigation
+
+📚 Learn (30 min)
+
+YouTube
+
+TechWorld with Nana
+👉 Linux Tutorial for Beginners (first 30–40 min)
+
+Focus on
+
+What is Linux
+
+/ root
+
+/home, /etc, /var
+
+🛠️ Hands-on (90 min)
+
+Task 1: Install VM
+
+Install VirtualBox
+
+Install Ubuntu
+
+Task 2: Run commands
+
+ls
+pwd
+cd
+mkdir test1 test2
+touch file1 file2
+cp file1 test1/
+mv file2 test2/
+rm file1
+
+🧠 Must Understand
+
+Difference between ls and pwd
+
+Absolute vs relative path
+
+Files vs directories
+
+🚨 Troubleshooting (30 min)
+
+Try:
+
+rm notexistfile
+
+
+Understand:
+
+Why error comes
+
+Linux error messages are your friend
+
+📂 GitHub (MANDATORY)
+
+Repo: linux-practice
+
+Push:
+
+day1-commands.txt
+
+Screenshots of terminal
+
+Small notes in README
+
+📅 DAY 2 – Users, Groups & Permissions
+🎯 Goal
+
+Control who can do what (very important for NOC)
+
+📚 Learn (30 min)
+
+YouTube
+
+KodeKloud – Linux Permissions (beginner)
+
+Focus
+
+chmod
+
+chown
+
+users & groups
+
+🛠️ Hands-on (90 min)
+useradd devuser
+passwd devuser
+groupadd devops
+usermod -aG devops devuser
+
+chmod 755 file
+chmod 644 file
+chown devuser:devops file
+
+🧠 Must Understand
+
+Meaning of 755, 644
+
+Owner vs group vs others
+
+🚨 Troubleshooting
+
+Break:
+
+chmod 000 file
+
+
+Fix permission issue
+
+📂 GitHub
+
+Push:
+
+permissions-notes.md
+
+Commands + explanation
+
+📅 DAY 3 – Package Management
+🎯 Goal
+
+Install & manage software like a real admin
+
+📚 Learn (30 min)
+
+YouTube
+
+TechWorld with Nana – Package Managers
+
+Understand
+
+apt vs yum
+
+update vs install
+
+🛠️ Hands-on (90 min)
+sudo apt update
+sudo apt install nginx
+systemctl status nginx
+curl localhost
+
+🧠 Must Understand
+
+What is a service
+
+Why nginx runs in background
+
+🚨 Troubleshooting
+
+Stop nginx:
+
+systemctl stop nginx
+curl localhost
+
+
+Fix it:
+
+systemctl start nginx
+
+📂 GitHub
+
+Push:
+
+nginx install steps
+
+Screenshot of browser
+
+📅 DAY 4 – Processes & Services
+🎯 Goal
+
+Know what is running on your server
+
+📚 Learn (30 min)
+
+YouTube
+
+KodeKloud – Linux Processes
+
+🛠️ Hands-on (90 min)
+ps aux
+top
+kill -9 <pid>
+systemctl stop nginx
+systemctl start nginx
+
+🧠 Must Understand
+
+Process vs service
+
+Why killing wrong PID is dangerous
+
+🚨 Troubleshooting
+
+Kill nginx process
+
+Recover using systemctl
+
+📂 GitHub
+
+Push:
+
+Process vs service notes
+
+📅 DAY 5 – Logs (VERY IMPORTANT)
+🎯 Goal
+
+Think like NOC engineer
+
+📚 Learn (30 min)
+
+YouTube
+
+KodeKloud – Linux Logs
+
+🛠️ Hands-on (90 min)
+ls /var/log
+tail -f /var/log/syslog
+journalctl -u nginx
+
+🧠 Must Understand
+
+Logs = root cause
+
+Which logs to check first
+
+🚨 Troubleshooting
+
+Break nginx config
+
+Read logs
+
+Fix config
+
+📂 GitHub
+
+Push:
+
+Log examples
+
+Error → Fix explanation
+
+🟢 WEEKEND (4–5 HOURS)
+Tasks
+df -h
+du -sh *
+free -m
+
+
+Write shell script:
+
+#!/bin/bash
+df -h
+free -m
+
+
+Push Mini Project:
+
+Linux server health check
+
+✅ WEEK 2: Linux Admin + Shell Scripting
+Daily Pattern (Same 2.5 hrs)
+
+Learn: variables, loops, conditions
+📺 KodeKloud Shell Scripting
+
+Hands-on: write scripts
+
+Troubleshoot: break scripts
+
+GitHub: scripts + README
+
+Weekend:
+
+Linux Server Setup Project
+
+✅ WEEK 3: Git & GitHub
+
+Daily:
+
+Git basics → branching → conflicts
+
+📺 Kunal Kushwaha – Git & GitHub
+
+Repos:
+
+linux-scripts
+
+devops-notes
+
+✅ WEEK 4: NOC → DevOps Mapping
+
+At Job:
+
+Alerts
+
+Tickets
+
+SLAs
+
+At Home:
+
+Incident
+
+Escalation
+
+Monitoring basics
+
+GitHub notes:
+
+“How NOC experience helps DevOps”
+
+🔥 SAME DAILY FORMAT FOR MONTH 2–6
+
+Only technology changes, system stays SAME:
+
+Month 2–3 → AWS
+
+Month 4 → Docker + Jenkins
+
+Month 5 → Kubernetes
+
+Month 6 → Terraform + Monitoring
+
+🧠 FINAL TRUTH (IMPORTANT)
+
+You are not learning topics
+You are building proof of experience
+
+👉 If you follow this daily system, in 12 months your GitHub will speak louder than “3 years experience”.
